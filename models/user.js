@@ -15,9 +15,7 @@ const userSchema = new mongoose.Schema({
     },
     role: {
         type: String,
-        enum: ['Super Admin', 'Teacher', 'Student'],  
-        default: 'Student',
-    },
+     },
     expiresAt: {
         type: Date,
         required: function() {
